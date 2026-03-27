@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Career Navigator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app" id="app">
+
+  <!-- SLIDE 1 -->
+  <section class="slide">
+    <h1>🚀 Career Navigator</h1>
+    <div class="card fade-in">
+      <label>Minat</label>
+      <select id="interest">
+        <option>Teknologi</option>
+        <option>Desain</option>
+        <option>Bisnis</option>
+        <option>Olahraga</option>
+        <option>Seni</option>
+      </select>
+
+      <button onclick="generateRoadmap()">Rekomendasi</button>
+      <div id="output" class="result"></div>
+
+      <button onclick="nextSlide()">Next ➡</button>
+    </div>
+  </section>
+
+  <!-- SLIDE 2 -->
+  <section class="slide">
+    <h1>🤖 AI Mentor</h1>
+    <div class="card fade-in">
+      <input type="text" id="question" placeholder="Tanya sesuatu...">
+      <button onclick="askAI()">Tanya</button>
+      <div id="aiResponse" class="result"></div>
+
+      <button onclick="prevSlide()">⬅ Back</button>
+      <button onclick="nextSlide()">Next ➡</button>
+    </div>
+  </section>
+
+  <!-- SLIDE 3 -->
+  <section class="slide">
+    <h1>📊 Progress Tracker</h1>
+    <div class="card fade-in">
+      <p>Checklist Belajar:</p>
+      <label><input type="checkbox"> Belajar dasar</label>
+      <label><input type="checkbox"> Latihan</label>
+      <label><input type="checkbox"> Buat project</label>
+      <label><input type="checkbox"> Siap kerja</label>
+
+      <button onclick="prevSlide()">⬅ Back</button>
+    </div>
+  </section>
+
+</div>
+
+<!-- INDICATOR -->
+<div class="indicator">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html
